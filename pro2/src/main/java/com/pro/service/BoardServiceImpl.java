@@ -2,8 +2,7 @@ package com.pro.service;
 
 import java.util.List;
 
-import javax.inject.Inject;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.pro.dao.BoardDAO;
@@ -12,7 +11,7 @@ import com.pro.domain.BoardVO;
 @Repository
 public class BoardServiceImpl implements BoardService {
 
-	@Inject
+	@Autowired // @Inject
 	private BoardDAO dao;
 
 	@Override
